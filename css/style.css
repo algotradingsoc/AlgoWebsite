@@ -1,0 +1,112 @@
+html {
+	height: auto;
+	min-height: 100%	
+}
+
+body {
+	position: relative;
+	height: auto;
+	min-height: 100%
+}
+
+p {
+	text-align:justify;
+}
+
+#newsletters {
+	padding-top:30px;
+}
+
+#about {
+	padding-top:30px;
+}
+
+#committee {
+	padding-top:30px;
+}
+
+.backgroundimg {
+	background: url('../images/bg.png');
+	display: table;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+}
+
+.landing-text {
+	display: table-cell;
+	text-align: center;
+	vertical-align: center;
+}
+
+#topBtn {
+	background-color: grey;
+	border: medium none;
+	border-radius: 8px;
+	bottom: 20px;
+	color: white;
+	cursor: pointer;
+	display: none;
+	opacity: 0.5;
+	position: fixed;
+	right: 30px;
+	font-size: 1rem;
+}
+
+#topBtn:hover {
+	opacity: 1;
+}
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.no-resize {
+	object-fit: cover;
+	border: 5px solid white;
+	border-radius: 5px;
+	min-width: 128px;
+	min-height: 128px;
+	margin: 0px 25px 25px 25px;
+}
+
+.right {
+	float: right;
+}
+
+.footer {
+    background-color: #333333;
+    padding: 40px;	
+}
+
+.footer small {
+    position: relative;
+    top: 5px;
+    color: #777777;
+    font-size: 14px;
+}
+
+.footer .social-links a {
+	color: white;
+    display: inline-block;
+    vertical-align: middle;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%
+}
+
+.footer .social-links a+a {
+    margin-left: 5px
+}
+
+.footer .social-links a:hover {
+    background-color: #808080;
+    color: white
+}
