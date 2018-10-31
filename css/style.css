@@ -222,6 +222,7 @@ header.masthead p {
   background: linear-gradient(to bottom, rgba(22, 22, 22, 1) 15%, rgba(22, 22, 22, 0.8) 90%, rgba(22, 22, 22, 0.6) 100%);
   height: auto;
   padding-bottom: 10rem;
+  padding-top: 5rem;
 }
 
 .about-section h2 {
@@ -232,12 +233,11 @@ header.masthead p {
 .about-section p {
   color: #f5f6fa;
   text-align: justify;
-  padding-bottom: 1rem;
 }
 
 .about-section .btn {
   font-size: 150%;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .committee-section {
@@ -296,8 +296,10 @@ header.masthead p {
   display: block;
   max-width: 600px;
   margin: 0 auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .portfolio-box .portfolio-box-caption {
