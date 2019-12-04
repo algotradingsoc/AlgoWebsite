@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,12 +12,14 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
     <!-- Custom fonts for this template -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'> -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 
     <!-- Plugin CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
@@ -28,913 +30,1068 @@
     <!-- Custom styles for this template -->
     <link href="css/style.min.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body id="page-top">
+<body id="page-top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">IC | AlgoTrade</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">IC | AlgoTrade</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#committee">Committee</a>
-            </li>
-<!--             <li class="nav-item">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#committee">Committee</a>
+                    </li>
+                    <!--             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#newsletters">Newsletters</a>
             </li> -->
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
+                    <li class="nav-item d-none">
+                        <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
     <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              Algorithmic Trading Society
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <p class="text-uppercase">
-              Imperial College London
-            </p>
-<!--             <p class="text-faded mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p> -->
-<!--             <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
-          </div>
+        <div class="container my-auto">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="text-uppercase">
+                        Algorithmic Trading Society
+                    </h1>
+                    <hr>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                    <p class="text-uppercase">
+                        Imperial College London
+                    </p>
+                    <!--             <p class="text-faded mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p> -->
+                    <!--             <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
+                </div>
+            </div>
         </div>
-      </div>
     </header>
 
-    <section class="about-section" id="about"> 
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-lg-12">
-            <img src="img/logo-white.png" width="40%">
-          </div>
+    <section class="sponsor-section bg-light" id="sponsor">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Sponsors</h2>
+                    <hr class="mt-4 mb-2">
+                </div>
+            </div>
         </div>
-        <div class="row mt-5">
-          <div class="col-md-10 mx-auto">
-            <h2 class="section-heading text-uppercase">About Us</h2>
-            <p>As of March 2018, we became a society for the first time at Imperial College London and have since held a launch event where participants were introduced to the society and the activities we will be planning for the upcoming academic year. Regardless of whether you are a novice to trading or a veteran Quant, all are welcomed to be part of the society. If you want to learn more about simple trading strategies or more complicated statistical arbitrage of stocks, the society hopes to bring students closer to learning and developing their understanding and application of algorithms in a financially driven context.</p>
-            <p>Current plans for society activities include a machine learning lecture series in Python to be held during the upcoming academic year. Alongside this, we will be hosting weekly live trading sessions led by a PhD Computer Scientist. The first hour will consist of theory being taught and demonstrations of implementing the algorithms. The second hour will consist of live trading and group discussions regarding the market's behavior. We hope to build a community of Algo-traders which will support each other's endeavours into algorithmic trading.</p>
-            
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h4 class="section-heading">Gold Sponsors</h4>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <a href="https://www.janestreet.com/join-jane-street/apply/">
+                    <div class="item">
+                        <img src="img/sponsors/janestreet.png" style="width:15rem; margin-top: 3rem; margin-bottom: 3rem">
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h4 class="section-heading">Silver Sponsors</h4>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <a href="https://www.janestreet.com/join-jane-street/apply/">
+                        <img src="img/sponsors/janestreet.png" style="width:15rem; margin: auto; display: block; margin-top: 1.5rem;">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.janestreet.com/join-jane-street/apply/">
+                        <img src="img/sponsors/janestreet.png" style="width:15rem; margin: auto; display: block; margin-top: 1.5rem; margin-bottom: 3rem">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h4 class="section-heading">Algothon Sponsors</h4>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <a href="https://careers.blackrock.com">
+                    <div class="item">
+                        <img class="" src="img/blackrock-logo-sitemap.svg" alt="" style="width: 15rem; margin-top: 12.5%">
+                    </div>
+                </a>
+                <a href="https://www.quandl.com">
+                    <div class="item">
+                        <img src="img/Quandl_logo.png" style="width:15rem; margin-top: 7.5%">
+                    </div>
+                </a>
+                <a href="https://aws.amazon.com/education/">
+                    <div class="item">
+                        <img src="img/AWS_logo.png" style="width:10rem; margin-top: 2.5%">
+                    </div>
+                </a>
+                <a href="https://www.imperial.ac.uk/business-school/faculty-research/research-centres/climate-finance-investment/">
+                    <div class="item">
+                        <img src="img/IB_logo.jpg" style="width:17.5rem; margin-top: 10%">
+                    </div>
+                </a>
+                <a href="https://www.refinitiv.com/en">
+                    <div class="item">
+                        <img src="img/rfv_lg.png" style="width:15rem">
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="row text-center">
-          <div class="col-md-12 mx-auto">
-            <a class="btn btn-light btn-xl js-scroll-trigger sr-button" href="https://www.imperialcollegeunion.org/activities/a-to-z/algorithmic-trading" target="_blank">Sign Up</a>
-          </div>        
+    </section>
+
+    <section class="about-section bg-light" id="about">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-uppercase text-center">About Us</h2>
+                    <img src="img/logo-white.png" width="40%">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <p>As of March 2018, we became a society for the first time at Imperial College London and have since held a launch event where participants were introduced to the society and the activities we will be planning for the upcoming academic
+                        year. Regardless of whether you are a novice to trading or a veteran Quant, all are welcomed to be part of the society. If you want to learn more about simple trading strategies or more complicated statistical arbitrage of stocks,
+                        the society hopes to bring students closer to learning and developing their understanding and application of algorithms in a financially driven context.</p>
+                    <p>Current plans for society activities include a machine learning lecture series in Python to be held during the upcoming academic year. Alongside this, we will be hosting weekly live trading sessions led by a PhD Computer Scientist.
+                        The first hour will consist of theory being taught and demonstrations of implementing the algorithms. The second hour will consist of live trading and group discussions regarding the market's behavior. We hope to build a community
+                        of Algo-traders which will support each other's endeavours into algorithmic trading.</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12 mx-auto">
+                    <a class="btn btn-primary btn-xl js-scroll-trigger sr-button" href="https://www.imperialcollegeunion.org/activities/a-to-z/algorithmic-trading" target="_blank">Sign Up</a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
 
 
     <section class="committee-section" id="committee">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Committee</h2>
-            <hr class="mt-4 mb-2">
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Committee</h2>
+                    <hr class="mt-4 mb-2">
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="container profiles">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center profile-item" data-toggle="modal" data-target="#Modal1">
-            <div class="service-box mt-5 mx-auto sr-icons">
-              <img class="mx-auto mb-3 rounded-circle" src="img/JoeArrowsmith.jpg" alt="" width="200px" height="200px">
-              <h3 class="mb-3">Joe Arrowsmith</h3>
-              <p class="text-muted mb-0">President</p>
-            </div>
-          </div>
-          <div class="modal animated fadeIn" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="ModalLabel1">Joe Arrowsmith</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="row">
-                        <div class="col-xs-12 col-lg-5 modal-img text-center">
-                          <img class="mx-auto mb-3 ml-lg-4 rounded-circle" src="img/JoeArrowsmith.jpg" alt="" width="200px" height="200px">
-                        </div>
-                        <div class="col-xs-12 col-lg-7 modal-text">
-                          <h3>President</h3>
-                          <p>I am Joe, the current President of the Algorithmic Trading Society. Finance is a passion of mine and algorithmic trading is a fast-growing field that will be enable me to pursue this passion and take advantage of my skills. There are many exciting events which we will be hosting for all members this coming year and we look forward to seeing everyone then.</p>
+        <div class="container profiles">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 text-center profile-item" data-toggle="modal" data-target="#Modal6">
+                    <div class="service-box mt-5 mx-auto sr-icons">
+                        <img class="mx-auto mb-3 rounded-circle" src="img/AlfonsoParra.jpg" alt="" width="200px" height="200px">
+                        <h3 class="mb-3">Alfonso Parra Garcia</h3>
+                        <p class="text-muted mb-0">President</p>
+                    </div>
+                </div>
+                <div class="modal animated fadeIn" id="Modal6" tabindex="-1" role="dialog" aria-labelledby="ModalLabel6" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalLabel6">Alfonso Parra Garcia</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xs-12 col-lg-5 modal-img text-center">
+                                        <img class="mx-auto mb-3 ml-lg-4 rounded-circle" src="img/AlfonsoParra.jpg" alt="" width="200px" height="200px">
+                                    </div>
+                                    <div class="col-xs-12 col-lg-7 modal-text">
+                                        <h3>President</h3>
+                                        <p>I am Alfonso and I am the secretary for the society. My ever-growing interest in finance, and more specifically algorithmic trading, started when I joined Imperial and discovered the application of computational
+                                            skills to this expanding field. My role as secretary of the society consists of managing sponsorships and organising enriching events. I look forward to meeting all of you and sharing this common interest.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="https://www.linkedin.com/in/alfonso-parra-garcía-553b05133" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                            </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="https://www.linkedin.com/in/joearrowsmith" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                  </div>
                 </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center profile-item" data-toggle="modal" data-target="#Modal2">
-            <div class="service-box mt-5 mx-auto sr-icons">
-              <img class="mx-auto mb-3 rounded-circle" src="img/MichaelAkintunde.jpg" alt="" width="200px" height="200px">
-              <h3 class="mb-3">Michael Akintunde</h3>
-              <p class="text-muted mb-0">Analyst</p>
-            </div>
-          </div>
-          <div class="modal animated fadeIn" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="ModalLabel2">Michael Akintunde</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div class="col-lg-3 col-md-6 text-center profile-item" data-toggle="modal" data-target="#Modal1">
+                    <div class="service-box mt-5 mx-auto sr-icons">
+                        <img class="mx-auto mb-3 rounded-circle" src="img/JoeArrowsmith.jpg" alt="" width="200px" height="200px">
+                        <h3 class="mb-3">Joe Arrowsmith</h3>
+                        <p class="text-muted mb-0">Chairman</p>
+                    </div>
+                </div>
+                <div class="modal animated fadeIn" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalLabel1">Joe Arrowsmith</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="row">
-                        <div class="col-xs-12 col-lg-5 modal-img text-center">
-                          <img class="mx-auto mb-3 ml-lg-4 rounded-circle" src="img/MichaelAkintunde.jpg" alt="" width="200px" height="200px">
-                        </div>
-                        <div class="col-xs-12 col-lg-7 modal-text">
-                          <h3>Analyst</h3>
-                          <p></p>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xs-12 col-lg-5 modal-img text-center">
+                                        <img class="mx-auto mb-3 ml-lg-4 rounded-circle" src="img/JoeArrowsmith.jpg" alt="" width="200px" height="200px">
+                                    </div>
+                                    <div class="col-xs-12 col-lg-7 modal-text">
+                                        <h3>President</h3>
+                                        <p>I am Joe, the current President of the Algorithmic Trading Society. Finance is a passion of mine and algorithmic trading is a fast-growing field that will be enable me to pursue this passion and take advantage of
+                                            my skills. There are many exciting events which we will be hosting for all members this coming year and we look forward to seeing everyone then.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="https://www.linkedin.com/in/joearrowsmith" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                            </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="https://www.linkedin.com/in/michael-akintunde-a8815a106/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                  </div>
                 </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center profile-item" data-toggle="modal" data-target="#Modal3">
-            <div class="service-box mt-5 mx-auto sr-icons">
-              <img class="mx-auto mb-3 rounded-circle" src="img/placeholder.png" alt="" width="200px" height="200px">
-              <h3 class="mb-3">Nuri Cingillioglu</h3>
-              <p class="text-muted mb-0">Head of Trading</p>
-            </div>
-          </div>
-          <div class="modal animated fadeIn" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="ModalLabel3" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="ModalLabel3">Nuri Cingillioglu</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div class="col-lg-3 col-md-6 text-center profile-item" data-toggle="modal" data-target="#Modal2">
+                    <div class="service-box mt-5 mx-auto sr-icons">
+                        <img class="mx-auto mb-3 rounded-circle" src="img/placeholder.png" alt="" width="200px" height="200px">
+                        <h3 class="mb-3">Joonsu Gha</h3>
+                        <p class="text-muted mb-0">Head of Machine Learning</p>
+                    </div>
+                </div>
+                <div class="modal animated fadeIn" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalLabel2">Joonsu Gha</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="row">
-                        <div class="col-xs-12 col-lg-5 modal-img text-center">
-                          <img class="mx-auto mb-3 ml-lg-4 rounded-circle" src="img/placeholder.png" alt="" width="200px" height="200px">
-                        </div>
-                        <div class="col-xs-12 col-lg-7 modal-text">
-                          <h3>Head of Trading</h3>
-                          <p></p>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xs-12 col-lg-5 modal-img text-center">
+                                        <img class="mx-auto mb-3 ml-lg-4 rounded-circle" src="img/placeholder.png" alt="" width="200px" height="200px">
+                                    </div>
+                                    <div class="col-xs-12 col-lg-7 modal-text">
+                                        <h3>Head of Machine Learning</h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href=""><i class="fab fa-linkedin fa-2x "></i></a>
+                            </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="modal-footer">
-                    
-                  </div>
                 </div>
-              </div>
-          </div>
+                <!-- <div class="col-lg-3 col-md-6 text-center profile-item " data-toggle="modal " data-target="#Modal3 ">
+                    <div class="service-box mt-5 mx-auto sr-icons ">
+                        <img class="mx-auto mb-3 rounded-circle " src="img/placeholder.png " alt=" " width="200px " height="200px ">
+                        <h3 class="mb-3 ">Nuri Cingillioglu</h3>
+                        <p class="text-muted mb-0 ">Head of Trading</p>
+                    </div>
+                </div>
+                <div class="modal animated fadeIn " id="Modal3 " tabindex="-1 " role="dialog " aria-labelledby="ModalLabel3 " aria-hidden="true ">
+                    <div class="modal-dialog modal-dialog-centered " role="document ">
+                        <div class="modal-content ">
+                            <div class="modal-header ">
+                                <h5 class="modal-title " id="ModalLabel3 ">Nuri Cingillioglu</h5>
+                                <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                      <span aria-hidden="true ">&times;</span>
+                    </button>
+                            </div>
+                            <div class="modal-body ">
+                                <div class="row ">
+                                    <div class="col-xs-12 col-lg-5 modal-img text-center ">
+                                        <img class="mx-auto mb-3 ml-lg-4 rounded-circle " src="img/placeholder.png " alt=" " width="200px " height="200px ">
+                                    </div>
+                                    <div class="col-xs-12 col-lg-7 modal-text ">
+                                        <h3>Head of Trading</h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer ">
 
-          <div class="col-lg-3 col-md-6 text-center profile-item" data-toggle="modal" data-target="#Modal4">
-            <div class="service-box mt-5 mx-auto sr-icons">
-              <img class="mx-auto mb-3 rounded-circle" src="img/FangfangHu.jpg" alt="" width="200px" height="200px">
-              <h3 class="mb-3">Fangfang Hu</h3>
-              <p class="text-muted mb-0">Technology: Front-End</p>
-            </div>
-          </div>
-          <div class="modal animated fadeIn" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="ModalLabel4" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="ModalLabel4">Fangfang Hu</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="row">
-                        <div class="col-xs-12 col-lg-5 modal-img text-center">
-                          <img class="mx-auto mb-3 ml-lg-4 rounded-circle" src="img/FangfangHu.jpg" alt="" width="200px" height="200px">
-                        </div>
-                        <div class="col-xs-12 col-lg-7 modal-text">
-                          <h3>Technology: Front-End</h3>
-                          <p>I am the lead front-end developer and am responsible for the development and maintenance of our online platforms such as the website, where we will be keeping members posted on relevant resources and updates. I will also be assisting in the maintenance of the trading platform once it is ready.</p>
+                            </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="https://www.linkedin.com/in/fangfanghu" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                  </div>
+                </div> -->
+
+                <div class="col-lg-3 col-md-6 text-center profile-item " data-toggle="modal " data-target="#Modal4 ">
+                    <div class="service-box mt-5 mx-auto sr-icons ">
+                        <img class="mx-auto mb-3 rounded-circle " src="img/JunhuaLi.jpg " alt=" " width="200px " height="200px ">
+                        <h3 class="mb-3 ">Junhua Li</h3>
+                        <p class="text-muted mb-0 ">Technology: Front-End</p>
+                    </div>
                 </div>
-              </div>
-          </div>
-          
+                <div class="modal animated fadeIn " id="Modal4 " tabindex="-1 " role="dialog " aria-labelledby="ModalLabel4 " aria-hidden="true ">
+                    <div class="modal-dialog modal-dialog-centered " role="document ">
+                        <div class="modal-content ">
+                            <div class="modal-header ">
+                                <h5 class="modal-title " id="ModalLabel4 ">Junhua Li</h5>
+                                <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                      <span aria-hidden="true ">&times;</span>
+                    </button>
+                            </div>
+                            <div class="modal-body ">
+                                <div class="row ">
+                                    <div class="col-xs-12 col-lg-5 modal-img text-center ">
+                                        <img class="mx-auto mb-3 ml-lg-4 rounded-circle " src="img/JunhuaLi.jpg " alt=" " width="200px " height="200px ">
+                                    </div>
+                                    <div class="col-xs-12 col-lg-7 modal-text ">
+                                        <h3>Technology: Front-End</h3>
+                                        <p>I am the head of front-end technology here at Algorithmic Trading Society, tasked with creating and maintaining websites like this one. I am also working closely with other committee members to work on other society
+                                            projects, such as Algothon and the upcoming algorithm training platform.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer ">
+                                <a href="https://www.linkedin.com/in/junhua-li/ " target="_blank "><i class="fab fa-linkedin fa-2x "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center profile-item " data-toggle="modal " data-target="#Modal5 ">
+                    <div class="service-box mt-5 mx-auto sr-icons ">
+                        <img class="mx-auto mb-3 rounded-circle " src="img/SamuelMartinFrias.jpg " alt=" " width="200px " height="200px ">
+                        <h3 class="mb-3 ">Samuel Martin Frias</h3>
+                        <p class="text-muted mb-0 ">Head of Events</p>
+                    </div>
+                </div>
+                <div class="modal animated fadeIn " id="Modal5 " tabindex="-1 " role="dialog " aria-labelledby="ModalLabel5 " aria-hidden="true ">
+                    <div class="modal-dialog modal-dialog-centered " role="document ">
+                        <div class="modal-content ">
+                            <div class="modal-header ">
+                                <h5 class="modal-title " id="ModalLabel5 ">Samuel Martin Frias</h5>
+                                <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                      <span aria-hidden="true ">&times;</span>
+                    </button>
+                            </div>
+                            <div class="modal-body ">
+                                <div class="row ">
+                                    <div class="col-xs-12 col-lg-5 modal-img text-center ">
+                                        <img class="mx-auto mb-3 ml-lg-4 rounded-circle " src="img/SamuelMartinFrias.jpg " alt=" " width="200px " height="200px ">
+                                    </div>
+                                    <div class="col-xs-12 col-lg-7 modal-text ">
+                                        <h3>Head of Events</h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer ">
+                                <a href="https://www.linkedin.com/in/samuelmartinfrias " target="_blank "><i class="fab fa-linkedin fa-2x "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center profile-item " data-toggle="modal " data-target="#Modal15 ">
+                    <div class="service-box mt-5 mx-auto sr-icons ">
+                        <img class="mx-auto mb-3 rounded-circle " src="img/UmerHasan.jpg " alt=" " width="200px " height="200px ">
+                        <h3 class="mb-3 ">Umer Hasan</h3>
+                        <p class="text-muted mb-0 ">Treasurer</p>
+                    </div>
+                </div>
+                <div class="modal animated fadeIn " id="Modal15 " tabindex="-1 " role="dialog " aria-labelledby="ModalLabel5 " aria-hidden="true ">
+                    <div class="modal-dialog modal-dialog-centered " role="document ">
+                        <div class="modal-content ">
+                            <div class="modal-header ">
+                                <h5 class="modal-title " id="ModalLabel5 ">Umer Hasan</h5>
+                                <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                          <span aria-hidden="true ">&times;</span>
+                        </button>
+                            </div>
+                            <div class="modal-body ">
+                                <div class="row ">
+                                    <div class="col-xs-12 col-lg-5 modal-img text-center ">
+                                        <img class="mx-auto mb-3 ml-lg-4 rounded-circle " src="img/UmerHasan.jpg " alt=" " width="200px " height="200px ">
+                                    </div>
+                                    <div class="col-xs-12 col-lg-7 modal-text ">
+                                        <h3>Treasurer</h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer ">
+                                <a href="https://www.linkedin.com/in/umer-hasan/ " target="_blank "><i class="fab fa-linkedin fa-2x "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center profile-item " data-toggle="modal " data-target="#Modal7 ">
+                    <div class="service-box mt-5 mx-auto sr-icons ">
+                        <img class="mx-auto mb-3 rounded-circle " src="img/SelenaYang.jpg " alt=" " width="200px " height="200px ">
+                        <h3 class="mb-3 ">Selena Yang</h3>
+                        <p class="text-muted mb-0 ">Marketing</p>
+                    </div>
+                </div>
+                <div class="modal animated fadeIn " id="Modal7 " tabindex="-1 " role="dialog " aria-labelledby="ModalLabel7 " aria-hidden="true ">
+                    <div class="modal-dialog modal-dialog-centered " role="document ">
+                        <div class="modal-content ">
+                            <div class="modal-header ">
+                                <h5 class="modal-title " id="ModalLabel7 ">Selena Yang</h5>
+                                <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                      <span aria-hidden="true ">&times;</span>
+                    </button>
+                            </div>
+                            <div class="modal-body ">
+                                <div class="row ">
+                                    <div class="col-xs-12 col-lg-5 modal-img text-center ">
+                                        <img class="mx-auto mb-3 ml-lg-4 rounded-circle " src="img/SelenaYang.jpg " alt=" " width="200px " height="200px ">
+                                    </div>
+                                    <div class="col-xs-12 col-lg-7 modal-text ">
+                                        <h3>Marketing</h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer ">
+                                <a href="http://linkedin.com/in/lin-selena-yang " target="_blank "><i class="fab fa-linkedin fa-2x "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center profile-item " data-toggle="modal " data-target="#Modal8 ">
+                    <div class="service-box mt-5 mx-auto sr-icons ">
+                        <img class="mx-auto mb-3 rounded-circle " src="img/ThomasWong.jpg " alt=" " width="200px " height="200px ">
+                        <h3 class="mb-3 ">Thomas Wong</h3>
+                        <p class="text-muted mb-0 ">Technology: Back-End</p>
+                    </div>
+                </div>
+                <div class="modal animated fadeIn " id="Modal8 " tabindex="-1 " role="dialog " aria-labelledby="ModalLabel8 " aria-hidden="true ">
+                    <div class="modal-dialog modal-dialog-centered " role="document ">
+                        <div class="modal-content ">
+                            <div class="modal-header ">
+                                <h5 class="modal-title " id="ModalLabel8 ">Thomas Wong</h5>
+                                <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                      <span aria-hidden="true ">&times;</span>
+                    </button>
+                            </div>
+                            <div class="modal-body ">
+                                <div class="row ">
+                                    <div class="col-xs-12 col-lg-5 modal-img text-center ">
+                                        <img class="mx-auto mb-3 ml-lg-4 rounded-circle " src="img/ThomasWong.jpg " alt=" " width="200px " height="200px ">
+                                    </div>
+                                    <div class="col-xs-12 col-lg-7 modal-text ">
+                                        <h3>Technology: Back-End</h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer ">
+                                <a href="https://www.linkedin.com/in/thomas-w-27b463110/ " target="_blank "><i class="fab fa-linkedin fa-2x "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center profile-item" data-toggle="modal" data-target="#Modal5">
-            <div class="service-box mt-5 mx-auto sr-icons">
-              <img class="mx-auto mb-3 rounded-circle" src="img/SamuelMartinFrias.jpg" alt="" width="200px" height="200px">
-              <h3 class="mb-3">Samuel Martin Frias</h3>
-              <p class="text-muted mb-0">Treasurer</p>
-            </div>
-          </div>
-          <div class="modal animated fadeIn" id="Modal5" tabindex="-1" role="dialog" aria-labelledby="ModalLabel5" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="ModalLabel5">Samuel Martin Frias</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="row">
-                        <div class="col-xs-12 col-lg-5 modal-img text-center">
-                          <img class="mx-auto mb-3 ml-lg-4 rounded-circle" src="img/SamuelMartinFrias.jpg" alt="" width="200px" height="200px">
-                        </div>
-                        <div class="col-xs-12 col-lg-7 modal-text">
-                          <h3>Treasurer</h3>
-                          <p></p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="https://www.linkedin.com/in/samuelmartinfrias" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center profile-item" data-toggle="modal" data-target="#Modal6">
-            <div class="service-box mt-5 mx-auto sr-icons">
-              <img class="mx-auto mb-3 rounded-circle" src="img/AlfonsoParra.jpg" alt="" width="200px" height="200px">
-              <h3 class="mb-3">Alfonso Parra Garcia</h3>
-              <p class="text-muted mb-0">Secretary</p>
-            </div>
-          </div>
-          <div class="modal animated fadeIn" id="Modal6" tabindex="-1" role="dialog" aria-labelledby="ModalLabel6" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="ModalLabel6">Alfonso Parra Garcia</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="row">
-                        <div class="col-xs-12 col-lg-5 modal-img text-center">
-                          <img class="mx-auto mb-3 ml-lg-4 rounded-circle" src="img/AlfonsoParra.jpg" alt="" width="200px" height="200px">
-                        </div>
-                        <div class="col-xs-12 col-lg-7 modal-text">
-                          <h3>Secretary</h3>
-                          <p>I am Alfonso and I am the secretary for the society. My ever-growing interest in finance, and more specifically algorithmic trading, started when I joined Imperial and discovered the application of computational skills to this expanding field. My role as secretary of the society consists of managing sponsorships and organising enriching events. I look forward to meeting all of you and sharing this common interest.</p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="https://www.linkedin.com/in/alfonso-parra-garcía-553b05133" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center profile-item" data-toggle="modal" data-target="#Modal7">
-            <div class="service-box mt-5 mx-auto sr-icons">
-              <img class="mx-auto mb-3 rounded-circle" src="img/KaavyaSridhar.jpg" alt="" width="200px" height="200px">
-              <h3 class="mb-3">Kaavya Sridhar</h3>
-              <p class="text-muted mb-0">Marketing and Events</p>
-            </div>
-          </div>
-          <div class="modal animated fadeIn" id="Modal7" tabindex="-1" role="dialog" aria-labelledby="ModalLabel7" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="ModalLabel7">Kaavya Sridhar</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="row">
-                        <div class="col-xs-12 col-lg-5 modal-img text-center">
-                          <img class="mx-auto mb-3 ml-lg-4 rounded-circle" src="img/KaavyaSridhar.jpg" alt="" width="200px" height="200px">
-                        </div>
-                        <div class="col-xs-12 col-lg-7 modal-text">
-                          <h3>Marketing and Events</h3>
-                          <p>I am a second year biomedical engineer and in charge of marketing and events for the society. Please feel free to contact me if you would like to talk more about these topics because I am also still learning! Also, do let me know if you would like to propose ideas for other events for the society, aside from the currently planned datathon and machine learning lecture series.</p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="https://www.linkedin.com/in/kaavya-sridhar-965738a5" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center profile-item" data-toggle="modal" data-target="#Modal8">
-            <div class="service-box mt-5 mx-auto sr-icons">
-              <img class="mx-auto mb-3 rounded-circle" src="img/EdwardStables.jpg" alt="" width="200px" height="200px">
-              <h3 class="mb-3">Edward Stables</h3>
-              <p class="text-muted mb-0">Technology: Back-End</p>
-            </div>
-          </div>
-          <div class="modal animated fadeIn" id="Modal8" tabindex="-1" role="dialog" aria-labelledby="ModalLabel8" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="ModalLabel8">Edward Stables</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="row">
-                        <div class="col-xs-12 col-lg-5 modal-img text-center">
-                          <img class="mx-auto mb-3 ml-lg-4 rounded-circle" src="img/EdwardStables.jpg" alt="" width="200px" height="200px">
-                        </div>
-                        <div class="col-xs-12 col-lg-7 modal-text">
-                          <h3>Technology: Back-End</h3>
-                          <p>I am the lead back-end developer for the society where I oversee the planning and development of our open source trading platform. This is a big project that will be continued over many years but we hope to lay a solid groundwork within the year for a powerful, open source trading platform.</p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="https://www.linkedin.com/in/edward-stables-23224a13a" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
     </section>
-<!-- 
-    <section class="newsletters-section bg-light" id="newsletters">
-      <div class="container">
-        <div class="row">
+    <!-- 
+    <section class="newsletters-section bg-light " id="newsletters ">
+      <div class="container ">
+        <div class="row ">
           
         </div>
       </div>
     </section>
  -->
-    <section class="gallery-section" id="gallery">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Gallery</h2>
-            <hr class="mt-4 mb-5">
-          </div>
+    <section class="gallery-section bg-light d-none" id="gallery ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-12 text-center ">
+                    <h2 class="section-heading text-uppercase ">Gallery</h2>
+                    <hr class="mt-4 mb-5 ">
+                </div>
+            </div>
+
+            <h4 class="text-center mt-4 ">
+                Algothon 2018 @ BlackRock
+            </h4>
+            <p class="text-center ">
+                20 October 2018 - 21 October 2018
+            </p>
+            <div class="row no-gutters popup-gallery ">
+
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algothon (7).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algothon (7).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algothon 2018 @ BlackRock
+                                </div>
+                                <div class="project-name ">
+                                    20 October 2018 - 21 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algothon (3).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algothon (3).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algothon 2018 @ BlackRock
+                                </div>
+                                <div class="project-name ">
+                                    20 October 2018 - 21 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algothon (8).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algothon (8).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algothon 2018 @ BlackRock
+                                </div>
+                                <div class="project-name ">
+                                    20 October 2018 - 21 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row no-gutters popup-gallery ">
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algothon (1).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algothon (1).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algothon 2018 @ BlackRock
+                                </div>
+                                <div class="project-name ">
+                                    20 October 2018 - 21 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algothon (2).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algothon (2).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algothon 2018 @ BlackRock
+                                </div>
+                                <div class="project-name ">
+                                    20 October 2018 - 21 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algothon (12).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algothon (12).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algothon 2018 @ BlackRock
+                                </div>
+                                <div class="project-name ">
+                                    20 October 2018 - 21 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row no-gutters popup-gallery ">
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algothon (4).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algothon (4).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algothon 2018 @ BlackRock
+                                </div>
+                                <div class="project-name ">
+                                    20 October 2018 - 21 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algothon (5).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algothon (5).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algothon 2018 @ BlackRock
+                                </div>
+                                <div class="project-name ">
+                                    20 October 2018 - 21 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algothon (6).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algothon (6).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algothon 2018 @ BlackRock
+                                </div>
+                                <div class="project-name ">
+                                    20 October 2018 - 21 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row no-gutters popup-gallery ">
+                <div class="col-lg-2 col-sm-2 ">
+
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algothon (9).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algothon (9).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algothon 2018 @ BlackRock
+                                </div>
+                                <div class="project-name ">
+                                    20 October 2018 - 21 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algothon (11).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algothon (11).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algothon 2018 @ BlackRock
+                                </div>
+                                <div class="project-name ">
+                                    20 October 2018 - 21 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-sm-2 ">
+
+                </div>
+            </div>
+            <div class="row no-gutters popup-gallery ">
+                <div class="col-lg-2 col-sm-2 ">
+
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algothon (10).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algothon (10).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algothon 2018 @ BlackRock
+                                </div>
+                                <div class="project-name ">
+                                    20 October 2018 - 21 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algothon (13).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algothon (13).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algothon 2018 @ BlackRock
+                                </div>
+                                <div class="project-name ">
+                                    20 October 2018 - 21 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-2 col-sm-2 ">
+
+                </div>
+            </div>
+            <div class="row no-gutters popup-gallery ">
+                <div class="col-lg-4 col-sm-4 ">
+
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algothon (1).png ">
+                        <img class="img-fluid " src="img/Event Photos/algothon (1).png " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algothon 2018 @ BlackRock
+                                </div>
+                                <div class="project-name ">
+                                    20 October 2018 - 21 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+
+                </div>
+            </div>
+            <h4 class="text-center mt-4 ">
+                Man Group Challenge Presentations
+            </h4>
+            <p class="text-center ">
+                18 October 2018
+            </p>
+            <div class="row no-gutters popup-gallery ">
+
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algo_man_2018 (18).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algo_man_2018 (18).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Man Group Challenge Presentations
+                                </div>
+                                <div class="project-name ">
+                                    18 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algo_man_2018 (17).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algo_man_2018 (17).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Man Group Challenge Presentations
+                                </div>
+                                <div class="project-name ">
+                                    18 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algo_man_2018 (20).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algo_man_2018 (20).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algothon 2018 @ BlackRock
+                                </div>
+                                <div class="project-name ">
+                                    18 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row no-gutters popup-gallery ">
+
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algo_man_2018 (4).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algo_man_2018 (4).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Man Group Challenge Presentations
+                                </div>
+                                <div class="project-name ">
+                                    18 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algo_man_2018 (8).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algo_man_2018 (8).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Man Group Challenge Presentations
+                                </div>
+                                <div class="project-name ">
+                                    18 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/algo_man_2018 (14).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/algo_man_2018 (14).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algothon 2018 @ BlackRock
+                                </div>
+                                <div class="project-name ">
+                                    18 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <h4 class="text-center mt-4 ">
+                Algorithmic Trading Society Inaugural Event
+            </h4>
+            <p class="text-center ">
+                11 October 2018
+            </p>
+            <div class="row no-gutters popup-gallery ">
+
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/2018_inaugural_event (1).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/2018_inaugural_event (1).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algorithmic Trading Society Inaugural Event
+                                </div>
+                                <div class="project-name ">
+                                    11 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/2018_inaugural_event (2).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/2018_inaugural_event (2).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algorithmic Trading Society Inaugural Event
+                                </div>
+                                <div class="project-name ">
+                                    11 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/2018_inaugural_event (3).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/2018_inaugural_event (3).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algorithmic Trading Society Inaugural Event
+                                </div>
+                                <div class="project-name ">
+                                    11 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row no-gutters popup-gallery ">
+                <div class="col-lg-4 col-sm-4 ">
+
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/2018_inaugural_event (4).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/2018_inaugural_event (4).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algorithmic Trading Society Inaugural Event
+                                </div>
+                                <div class="project-name ">
+                                    11 October 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+
+                </div>
+            </div>
+            <h4 class="text-center mt-4 ">
+                Algorithmic Trading Society Launch Event
+            </h4>
+            <p class="text-center ">
+                21 March 2018
+            </p>
+            <div class="row no-gutters popup-gallery ">
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/portfolio/22-03-2018-01.jpg ">
+                        <img class="img-fluid " src="img/portfolio/22-03-2018-01.jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algorithmic Trading Society Launch Event
+                                </div>
+                                <div class="project-name ">
+                                    21 March 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/portfolio/22-03-2018-02.jpg ">
+                        <img class="img-fluid " src="img/portfolio/22-03-2018-02.jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algorithmic Trading Society Launch Event
+                                </div>
+                                <div class="project-name ">
+                                    21 March 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <a class="portfolio-box " href="img/Event Photos/launch_event (2).jpg ">
+                        <img class="img-fluid " src="img/Event Photos/launch_event (2).jpg " alt=" ">
+                        <div class="portfolio-box-caption ">
+                            <div class="portfolio-box-caption-content ">
+                                <div class="project-category text-faded ">
+                                    Algorithmic Trading Society Launch Event
+                                </div>
+                                <div class="project-name ">
+                                    21 March 2018
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-        
-        <h4 class="text-center mt-4">
-          Algothon 2018 @ BlackRock
-        </h4>
-        <p class="text-center">
-          20 October 2018 - 21 October 2018
-        </p>
-        <div class="row no-gutters popup-gallery">
-          
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algothon (7).jpg">
-              <img class="img-fluid" src="img/Event Photos/algothon (7).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algothon 2018 @ BlackRock
-                  </div>
-                  <div class="project-name">
-                    20 October 2018 - 21 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algothon (3).jpg">
-              <img class="img-fluid" src="img/Event Photos/algothon (3).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algothon 2018 @ BlackRock
-                  </div>
-                  <div class="project-name">
-                    20 October 2018 - 21 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algothon (8).jpg">
-              <img class="img-fluid" src="img/Event Photos/algothon (8).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algothon 2018 @ BlackRock
-                  </div>
-                  <div class="project-name">
-                    20 October 2018 - 21 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algothon (1).jpg">
-              <img class="img-fluid" src="img/Event Photos/algothon (1).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algothon 2018 @ BlackRock
-                  </div>
-                  <div class="project-name">
-                    20 October 2018 - 21 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algothon (2).jpg">
-              <img class="img-fluid" src="img/Event Photos/algothon (2).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algothon 2018 @ BlackRock
-                  </div>
-                  <div class="project-name">
-                    20 October 2018 - 21 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algothon (12).jpg">
-              <img class="img-fluid" src="img/Event Photos/algothon (12).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algothon 2018 @ BlackRock
-                  </div>
-                  <div class="project-name">
-                    20 October 2018 - 21 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algothon (4).jpg">
-              <img class="img-fluid" src="img/Event Photos/algothon (4).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algothon 2018 @ BlackRock
-                  </div>
-                  <div class="project-name">
-                    20 October 2018 - 21 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algothon (5).jpg">
-              <img class="img-fluid" src="img/Event Photos/algothon (5).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algothon 2018 @ BlackRock
-                  </div>
-                  <div class="project-name">
-                    20 October 2018 - 21 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algothon (6).jpg">
-              <img class="img-fluid" src="img/Event Photos/algothon (6).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algothon 2018 @ BlackRock
-                  </div>
-                  <div class="project-name">
-                    20 October 2018 - 21 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-2 col-sm-2">
-            
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algothon (9).jpg">
-              <img class="img-fluid" src="img/Event Photos/algothon (9).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algothon 2018 @ BlackRock
-                  </div>
-                  <div class="project-name">
-                    20 October 2018 - 21 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algothon (11).jpg">
-              <img class="img-fluid" src="img/Event Photos/algothon (11).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algothon 2018 @ BlackRock
-                  </div>
-                  <div class="project-name">
-                    20 October 2018 - 21 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-2 col-sm-2">
-            
-          </div>
-        </div>
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-2 col-sm-2">
-            
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algothon (10).jpg">
-              <img class="img-fluid" src="img/Event Photos/algothon (10).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algothon 2018 @ BlackRock
-                  </div>
-                  <div class="project-name">
-                    20 October 2018 - 21 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algothon (13).jpg">
-              <img class="img-fluid" src="img/Event Photos/algothon (13).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algothon 2018 @ BlackRock
-                  </div>
-                  <div class="project-name">
-                    20 October 2018 - 21 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          
-          <div class="col-lg-2 col-sm-2">
-            
-          </div>
-        </div>
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-4">
-            
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algothon (1).png">
-              <img class="img-fluid" src="img/Event Photos/algothon (1).png" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algothon 2018 @ BlackRock
-                  </div>
-                  <div class="project-name">
-                    20 October 2018 - 21 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            
-          </div>
-        </div>
-        <h4 class="text-center mt-4">
-          Man Group Challenge Presentations
-        </h4>
-        <p class="text-center">
-          18 October 2018
-        </p>
-        <div class="row no-gutters popup-gallery">
-          
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algo_man_2018 (18).jpg">
-              <img class="img-fluid" src="img/Event Photos/algo_man_2018 (18).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Man Group Challenge Presentations
-                  </div>
-                  <div class="project-name">
-                    18 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algo_man_2018 (17).jpg">
-              <img class="img-fluid" src="img/Event Photos/algo_man_2018 (17).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Man Group Challenge Presentations
-                  </div>
-                  <div class="project-name">
-                    18 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algo_man_2018 (20).jpg">
-              <img class="img-fluid" src="img/Event Photos/algo_man_2018 (20).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algothon 2018 @ BlackRock
-                  </div>
-                  <div class="project-name">
-                    18 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row no-gutters popup-gallery">
-          
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algo_man_2018 (4).jpg">
-              <img class="img-fluid" src="img/Event Photos/algo_man_2018 (4).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Man Group Challenge Presentations
-                  </div>
-                  <div class="project-name">
-                    18 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algo_man_2018 (8).jpg">
-              <img class="img-fluid" src="img/Event Photos/algo_man_2018 (8).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Man Group Challenge Presentations
-                  </div>
-                  <div class="project-name">
-                    18 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/algo_man_2018 (14).jpg">
-              <img class="img-fluid" src="img/Event Photos/algo_man_2018 (14).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algothon 2018 @ BlackRock
-                  </div>
-                  <div class="project-name">
-                    18 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <h4 class="text-center mt-4">
-          Algorithmic Trading Society Inaugural Event
-        </h4>
-        <p class="text-center">
-          11 October 2018
-        </p>
-        <div class="row no-gutters popup-gallery">
-          
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/2018_inaugural_event (1).jpg">
-              <img class="img-fluid" src="img/Event Photos/2018_inaugural_event (1).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algorithmic Trading Society Inaugural Event
-                  </div>
-                  <div class="project-name">
-                    11 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/2018_inaugural_event (2).jpg">
-              <img class="img-fluid" src="img/Event Photos/2018_inaugural_event (2).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algorithmic Trading Society Inaugural Event
-                  </div>
-                  <div class="project-name">
-                    11 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/2018_inaugural_event (3).jpg">
-              <img class="img-fluid" src="img/Event Photos/2018_inaugural_event (3).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algorithmic Trading Society Inaugural Event
-                  </div>
-                  <div class="project-name">
-                    11 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-4">
-            
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/2018_inaugural_event (4).jpg">
-              <img class="img-fluid" src="img/Event Photos/2018_inaugural_event (4).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algorithmic Trading Society Inaugural Event
-                  </div>
-                  <div class="project-name">
-                    11 October 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            
-          </div>
-        </div>
-        <h4 class="text-center mt-4">
-          Algorithmic Trading Society Launch Event
-        </h4>
-        <p class="text-center">
-          21 March 2018
-        </p>
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/portfolio/22-03-2018-01.jpg">
-              <img class="img-fluid" src="img/portfolio/22-03-2018-01.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algorithmic Trading Society Launch Event
-                  </div>
-                  <div class="project-name">
-                    21 March 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/portfolio/22-03-2018-02.jpg">
-              <img class="img-fluid" src="img/portfolio/22-03-2018-02.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algorithmic Trading Society Launch Event
-                  </div>
-                  <div class="project-name">
-                    21 March 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-            <a class="portfolio-box" href="img/Event Photos/launch_event (2).jpg">
-              <img class="img-fluid" src="img/Event Photos/launch_event (2).jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Algorithmic Trading Society Launch Event
-                  </div>
-                  <div class="project-name">
-                    21 March 2018
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
     </section>
 
-<!--     <section class="bg-dark text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+    <!--     <section class="bg-dark text-white ">
+      <div class="container text-center ">
+        <h2 class="mb-4 ">Free Download at Start Bootstrap!</h2>
+        <a class="btn btn-light btn-xl sr-button " href="http://startbootstrap.com/template-overviews/creative/ ">Download Now!</a>
       </div>
     </section> -->
 
-    <section class="bg-light" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Contact Us</h2>
-            <hr class="my-4">
-            <p class="mb-5">Message us on our Facebook page or drop us an email if you would like to get in touch!</p>
-          </div>
+    <section id="contact " class="contact-section bg-dark ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-8 mx-auto text-center ">
+                    <h2 class="section-heading text-white ">CONTACT US</h2>
+                    <hr class="my-4 mb-5 ">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-6 mb-3 mb-md-0 ">
+                    <div class="card py-4 h-100 ">
+                        <div class="card-body text-center ">
+                            <i class="fas fa-envelope text-primary mb-2 "></i>
+                            <h4 class="text-uppercase m-0 ">Email</h4>
+                            <hr class="my-4 ">
+                            <div class="small text-black-50 ">
+                                <a href="mailto:algo.trade@imperial.ac.uk ">algo.trade@imperial.ac.uk</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3 mb-md-0 ">
+                    <div class="card py-4 h-100 ">
+                        <div class="card-body text-center ">
+                            <i class="fab fa-facebook-square text-primary mb-2 "></i>
+                            <h4 class="text-uppercase m-0 ">Facebook</h4>
+                            <hr class="my-4 ">
+                            <div class="small text-black-50 ">
+                                <a href="https://fb.me/ICAlgorithmicTrading/ ">https://fb.me/ICAlgorithmicTrading/</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--         <div class="social d-flex justify-content-center ">
+        <a href="# " class="mx-2 ">
+          <i class="fab fa-twitter "></i>
+        </a>
+        <a href="# " class="mx-2 ">
+          <i class="fab fa-facebook-f "></i>
+        </a>
+        <a href="# " class="mx-2 ">
+          <i class="fab fa-github "></i>
+        </a>
+      </div> -->
+
         </div>
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fab fa-facebook-square fa-3x mb-3 sr-contact"></i>
-            <br />
-            <a href="https://fb.me/ICAlgorithmicTrading/">https://fb.me/ICAlgorithmicTrading/</a>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-envelope fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a href="mailto:algo.trade@imperial.ac.uk">algo.trade@imperial.ac.uk</a>
-            </p>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- Bootstrap core JavaScript -->
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin=" anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
 
 
     <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js "></script>
+    <script src="https://unpkg.com/scrollreveal "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js "></script>
 
+    <!-- owl carousel js -->
+    <script src="owlcarousel/owl.carousel.min.js"></script>
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
-
-  </body>
+    <script src="js/creative.min.js "></script>
+    <!-- additional  -->
+    <script>
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 15,
+                autoWidth: true,
+                center: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+</body>
 
 </html>
