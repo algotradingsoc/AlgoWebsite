@@ -224,8 +224,8 @@ header.masthead p {
 .about-section {
     /* background: linear-gradient(to bottom, rgba(22, 22, 22, 1) 15%, rgba(22, 22, 22, .8) 90%, rgba(22, 22, 22, .6) 100%); */
     height: auto;
-    padding-bottom: 10rem;
-    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-top: 10rem;
     margin-top: -7.55rem;
 }
 
