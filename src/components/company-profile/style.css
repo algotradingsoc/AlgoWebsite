@@ -6,10 +6,28 @@
     align-items: center;
 }
 
-.company-image {
+.gold-company-image {
     border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(0 15px 5px var(--dropshadow));
+    /*cursor: pointer;*/
+    margin-bottom: 10px;
+}
+
+.silver-company-image {
+    border-radius: 50%;  
     width: 150px;
     height: 150px;
+    filter: drop-shadow(0 15px 5px var(--dropshadow));
+    /*cursor: pointer;*/
+    margin-bottom: 10px;
+}
+
+.bronze-company-image {
+    border-radius: 50%;  
+    width: 100px;
+    height: 100px;
     filter: drop-shadow(0 15px 5px var(--dropshadow));
     /*cursor: pointer;*/
     margin-bottom: 10px;

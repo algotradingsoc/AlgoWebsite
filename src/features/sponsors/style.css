@@ -1,7 +1,22 @@
-.sponsors-container {
-    padding-top: 60px;
+.gold-sponsors-container {
+    padding-top: 30px;
 }
 
-.sponsors-container .col {
+.gold-sponsors-container .col {
+    margin-bottom: 2rem;
+}
+
+.silver-sponsors-container {
+    padding-top: 30px;
+}
+
+.silver-sponsors-container .col {
+    margin-bottom: 2rem;
+}
+.bronze-sponsors-container {
+    padding-top: 30px;
+}
+
+.bronze-sponsors-container .col {
     margin-bottom: 2rem;
 }

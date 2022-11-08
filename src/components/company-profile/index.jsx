@@ -1,13 +1,13 @@
 import React, {useState} from 'react'
 import './style.css'
 
-function CompanyProfile(props) {
+export function GoldCompanyProfile(props) {
 
     const [modalOpen, setModalOpen] = useState(false)
 
     return (
         <div className={'company-container'}>
-            <img className={'company-image'} src={props.src} alt={props.name} onClick={() => setModalOpen(true)}/>
+            <img className={'gold-company-image'} src={props.src} alt={props.name} onClick={() => setModalOpen(true)}/>
             <p className={'company-name'}>
                 {props.name}
             </p>
@@ -34,4 +34,34 @@ function CompanyProfile(props) {
 
 }
 
-export default CompanyProfile
+export function SilverCompanyProfile(props) {
+
+    const [modalOpen, setModalOpen] = useState(false)
+
+    return (
+        <div className={'company-container'}>
+            <img className={'silver-company-image'} src={props.src} alt={props.name} onClick={() => setModalOpen(true)}/>
+            <p className={'company-name'}>
+                {props.name}
+            </p>
+        </div>
+    )
+
+}
+
+export function BronzeCompanyProfile(props) {
+
+    const [modalOpen, setModalOpen] = useState(false)
+
+    return (
+        <div className={'company-container'}>
+            <img className={'bronze-company-image'} src={props.src} alt={props.name} onClick={() => setModalOpen(true)}/>
+            <p className={'company-name'}>
+                {props.name}
+            </p>
+        </div>
+    )
+
+}
+
+/*export default CompanyProfile*/

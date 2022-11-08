@@ -13,8 +13,8 @@ function Committee() {
             position: 'PRESIDENT'
         },
         {
-            src: process.env.PUBLIC_URL + '/img/vincent.png',
-            name: 'Vincent Ho',
+            src: process.env.PUBLIC_URL + '/img/yiwen.png',
+            name: 'Yiwen Xia',
             position: 'TECHNOLOGY'
         },
         {
